@@ -1,4 +1,4 @@
-import { createHash } from 'crypto'
+/**import { createHash } from 'crypto'
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import fetch from 'node-fetch'
 import fs from 'fs'
@@ -71,4 +71,4 @@ function clockString(ms) {
         res = "مساء الخير 🌙"
       }
       return res
-      }
+      }**/
