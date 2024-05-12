@@ -1,4 +1,4 @@
-export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
+/*export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
   if (m.isBaileys && m.fromMe) return !0;
   if (m.isGroup) return !1;
   if (!m.message) return !0;
@@ -10,4 +10,4 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
     await this.updateBlockStatus(m.chat, 'block');
   }
   return !1;
-}
+}*/
