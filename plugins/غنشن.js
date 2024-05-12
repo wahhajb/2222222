@@ -2,9 +2,9 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
 	let url = gensin[Math.floor(Math.random() * gensin.length)]
-	conn.sendFile(m.chat, url, 'gensin.jpg', '_JOHAN_', m)
+	conn.sendFile(m.chat, url, 'gensin.jpg', m)
 }
-handler.command = /^(غنشن)$/i
+handler.command = /^(غنشن|قنشن)$/i
 handler.tags = ['random']
 handler.help = ['gensin']
 handler.limit = true
