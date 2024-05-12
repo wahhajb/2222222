@@ -11,26 +11,24 @@ global.botnumber = ""
 global.confirmCode = ""
 
 global.owner = [
-  ['22247072475', '👑 Mystic - Creador 👑', true],
-];
+  ['201015558196','👑 𝐒 𝐇 𝐀 𝐃 𝐎 𝐖 👑', true],
+] 
+global.suittag = ['201015558196'] 
+global.prems = ['201015558196'] 
+global.reportes_solicitudes = ['201015558196']
 
-global.suittag = ['22247072475'];
-global.prems = ['22247072475'];
+global.packname = '🍁𝐆  𝐔  𝐓  𝐒' 
+global.author = '𝐁  𝐎  𝐓🍁'
+global.wm = '𝙶𝚄𝚃𝚂- 𝙱𝙾𝚃'
+global.igfg = '𝙶𝚄𝚃𝚂 - 𝙱𝙾𝚃'
+global.wait = '*[❗] لحظة من فضلك...*'
 
-global.packname = 'Sticker';
-global.author = 'SHANKS - Bot';
-global.wm = 'SHANKS - Bot';
-global.titulowm = 'SHANKS - Bot';
-global.titulowm2 = `SHANKS - Bot`
-global.igfg = 'SHANKS - Bot';
-global.wait = '*[ ⏳ ] تَحْميل...*';
-
-global.imagen1 = fs.readFileSync('./Menu2.jpg');
-global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
-global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
-global.imagen4 = fs.readFileSync('./Menu.png');
-global.imagen5 = fs.readFileSync('./src/+18.jpg');
-global.imagen6 = fs.readFileSync('./Menu3.png');
+global.imagen1 = fs.readFileSync('./src/error.jpeg')
+global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
+global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
+global.imagen4 = fs.readFileSync('./Guts.jpeg')
+global.imagen5 = fs.readFileSync('./Menu.jpeg')
+global.imagen6 = fs.readFileSync('./البرو.jpeg')
 
 global.mods = [];
 
@@ -43,15 +41,15 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nshanks - Bot`;
-global.gt = 'shanks - Bot';
-global.mysticbot = 'SHANKS - Bot';
+global.wm2 = `${dia} ${fecha}\n𝙶𝚄𝚃𝚂 - 𝙱𝙾𝚃`;
+global.gt = '𝙶𝚄𝚃𝚂 - 𝙱𝙾𝚃';
+global.mysticbot = '𝙶𝚄𝚃𝚂 - 𝙱𝙾𝚃';
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
 global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
 global.waitt = '*[ ⏳ ] Cargando...*';
 global.waittt = '*[ ⏳ ] Cargando...*';
 global.waitttt = '*[ ⏳ ] Cargando...*';
-global.nomorown = '22247072475';
+global.nomorown = '201015558196';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
