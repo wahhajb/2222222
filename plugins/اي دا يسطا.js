@@ -1,4 +1,4 @@
-import {sticker} from '../lib/sticker.js';
+/**import {sticker} from '../lib/sticker.js';
 import fetch from 'node-fetch';
 import MessageType from '@whiskeysockets/baileys';
 
@@ -26,4 +26,4 @@ handler.group = true;
 handler.owner = true;
 hendler.groube = true;
 hendler.prime = true;
-export default handler;
+export default handler;*/
