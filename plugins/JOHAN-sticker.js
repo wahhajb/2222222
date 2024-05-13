@@ -1,4 +1,4 @@
-let axios = require('axios')
+/**let axios = require('axios')
 const { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async (m, { conn }) => {
@@ -9,4 +9,4 @@ let handler = async (m, { conn }) => {
 }
 
 handler.command = /^(يوهان)$/i
-module.exports = handler
+module.exports = handler*/
