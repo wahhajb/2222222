@@ -9,10 +9,11 @@ let handler = async (m, { conn, command, args }) => {
     global.db.data.users[m.sender].exp -= xpperdiamond * count
     global.db.data.users[m.sender].diamond += count
     conn.reply(m.chat, `
-┌─「 *NOTA PEMBAYARAN* 」
-‣ *Nominal pembelian* : + ${count}💎 
-‣ *Usang* : -${xpperdiamond * count} XP
-└──────────────`, m)
+┌بناءً على السياق المقدم ، تتضمن "Nota Pembayaran" أو ملاحظة الدفع التفاصيل التالية: 
+ - Pembelian الاسمية: + $ {count} 💎 (مقدار الشراء: + $ {count} diamonds) 
+ -USANG: -$ {xpperdiamond * count} xp (خصم xp لكل ماس تم شراؤه: -$ {xpperdiamond * count} xp) 
+
+ يشير هذا إلى كمية الماس المشتراة و XP المقابل تم خصمه لكل ماس.`, m)
   } else conn.reply(m.chat, `❎ معذرةً ، ليس لديك ما يكفي من * XP* للشراء*${count}*الماس\n\n يمكنك الحصول على * XP * باستخدام الأوامر💎 في * الألعاب والقائمة ؛ اقتصاد*`, m)
 }
 handler.help = ['buy', 'buyall']
