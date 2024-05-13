@@ -12,20 +12,19 @@ let handler = async (m, { conn, args, participants }) => {
   let usersLevel = sortedLevel.map(enumGetKey)
   let len = args[0] && args[0].length > 0 ? Math.min(50, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
   let text = `
-       ≡ *المتصدرين*
-    
-▢ *TOP ${len} XP* 🧬
+       *┃الـــمــتـصدريـن┃*
+
+▢ *تــوب ${len} اكــسـبي* 🧬
 انت : *${usersExp.indexOf(m.sender) + 1}* ل *${usersExp.length}*
 
-${sortedExp.slice(0, len).map(({ jid, exp }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*XP ${exp}*_`).join`\n`}
+${sortedExp.slice(0, len).map(({ jid, exp }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*اكـــســبـي ${exp}*_`).join`\n`}
 
-▢ *TOP ${len} العدد💎* 
+▢ *تــوب ${len} الــعـدد💎* 
 انت : *${usersLim.indexOf(m.sender) + 1}* ل *${usersLim.length}*
 
-${sortedLim.slice(0, len).map(({ jid, diamond }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*
-الماس ${diamond}*_`).join`\n`}
+${sortedLim.slice(0, len).map(({ jid, diamond }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*الــمـاس ${diamond}*_`).join`\n`}
 
-▢ *TOP ${len} مستوي* ⬆️
+▢ *تــوب ${len} لــفـل* ⬆️
 انت : *${usersLevel.indexOf(m.sender) + 1}* ل *${usersLevel.length}*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*مستوي ${level}*_`).join`\n`}
@@ -33,13 +32,11 @@ ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `*${i + 1}.* ${participan
   conn.reply(m.chat, text, m, {
     mentions: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len)].filter(v => !participants.some(p => areJidsSameUser(v, p.id) )) 
 })
- 
+
 }
 handler.help = ['leaderboard']
 handler.tags = ['econ']
-handler.command = ['المتصدرين', 'ترتيب', 'top'] 
-handler.rowner = true
-
+handler.command = ['المتصدرين', 'ترتيب', 'top', 'توب'] 
 
 export default handler
 
