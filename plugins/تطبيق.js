@@ -3,17 +3,17 @@ import { download } from 'aptoide-scraper';
 let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
   try {
     if (command === 'apk') {
-      if (!text) throw `🎯حط اسم العبه اللي عايز او التطبيق اللي عايز تنزله وانتظر حتي تتم العملية.`;
+      if (!text) throw `*يـــجــب كـــتــابـة اســـم الـــتــطـبيق [❗]*`;
 
       await conn.reply(m.chat, global.wait, m);
       let data = await download(text);
 
       if (data.size.replace(' MB', '') > 200) {
-        return await conn.sendMessage(m.chat, { text: '*⚠️The File Is Too Large.*' }, { quoted: m });
+        return await conn.sendMessage(m.chat, { text: '*لـلأســـف مـــســاحـة الـــتــطـبيق كــبــيره [❗]*' }, { quoted: m });
       }
 
       if (data.size.includes('GB')) {
-        return await conn.sendMessage(m.chat, { text: '*⚠️The File Is Too Large.*' }, { quoted: m });
+        return await conn.sendMessage(m.chat, { text:'*لـلأســـف مـــســاحـة الـــتــطـبيق كــبــيره [❗]*' }, { quoted: m });
       }
 
       await conn.sendMessage(
@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
       );
     }
   } catch {
-    throw `*❌حدث خطأ حط لينك او اسم العبه اللي عايز تنزلها.*`;
+    throw `*يـــجــب كـــتــابـة اســـم الـــتــطـبيق [❗]*`;
   }
 };
 
