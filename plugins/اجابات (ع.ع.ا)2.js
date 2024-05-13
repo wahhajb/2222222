@@ -22,7 +22,7 @@ export async function before(m) {
             clearTimeout(this.tebakbendera[id][3])
             delete this.tebakbendera[id]
         } else if (similarity(m.text.toLowerCase(), json.name.toLowerCase().trim()) >= threshold)
-            m.reply(`*لقد كنت علي وشك النجاح*!`)
+            m.reply(`❐┃قربـت مـن الاجـابة┃❗️❯`)
         else
             this.reply(m.chat, `❐┃اجـابـة خـاطـئـة┃❌ ❯`, m)
     }
