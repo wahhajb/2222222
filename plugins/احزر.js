@@ -7,13 +7,13 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tebakbendera[id][0])
         throw false
     }
-    let src = await (await fetch('https://raw.githubusercontent.com/yayuii/Fa3aliya/main/JOHAN.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/ze819/AURTER-BOT/main/Games/guessanime.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `*${command.toUpperCase()}*
-  ❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
-  *استخدم .انسحب للأنسحاب*
-  ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-🌺Nezuko-BOT🌺
+      let caption = `*${command.toUpperCase()}*
+    *❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇*
+   *استخدم .انسحب للأنسحاب*
+    *❐↞┇الـجـائزة💰↞ ${poin} نقاط┇*
+  *『𝙶𝚄𝚃𝚂\x20-\x20𝙱𝙾𝚃』*
      `.trim()
     conn.tebakbendera[id] = [
         await conn.sendFile(m.chat, json.img, '', caption, m),
