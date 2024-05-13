@@ -9,10 +9,10 @@ let handler = async (m, {conn, isPrems }) => {
   if (new Date - global.db.data.users[m.sender].lastclaim < 86400000) throw `🎁 *Anda telah mengumpulkan hadiah harian Anda*\n\n🕚 Masuk kembali *${msToTime(time - new Date())}* `
   global.db.data.users[m.sender].exp += isPrems ? prem : free
   m.reply(`
-🎁 *هدية يومية*
+🎁 *الـــهــديـه اليـــومــيه*
 
-▢ *لقد تلقيت:*
-🆙 *XP* : +${isPrems ? prem : free}`)
+▢ *لــقـد تـــلــقـيت:*
+🆙*اكـــســبـي* : +${isPrems ? prem : free}`)
   global.db.data.users[m.sender].lastclaim = new Date * 1
 }
 handler.help = ['daily']
