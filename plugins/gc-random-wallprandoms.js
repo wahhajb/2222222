@@ -1,4 +1,4 @@
-import axios from "axios"
+/**import axios from "axios"
 let handler = async (m, {command, conn}) => {
 let apikey = global.keysxxx
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -138,3 +138,4 @@ source: 'https://www.besthdwallpaper.com/'+$(b).find('div > a:nth-child(3)').att
 image: [$(b).find('picture > img').attr('data-src') || $(b).find('picture > img').attr('src'), $(b).find('picture > source:nth-child(1)').attr('srcset'), $(b).find('picture > source:nth-child(2)').attr('srcset')]
 })})
 resolve(hasil)})})}
+*/
