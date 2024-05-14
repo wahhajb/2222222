@@ -2,7 +2,7 @@ import util from 'util'
 import path from 'path'
 let user = a => '@' + a.split('@')[0]
 function handler(m, { groupMetadata, command, conn, text, usedPrefix}) {
-if (!text) throw `لاستخدام هذا الامر اكتب مثل هذا الشيئ:\n.توب *اساطير*`
+if (!text) throw `*✪┇اكـتـب الامـر ثـم ضــع كـالــمـثـال الآتــي┇*\n\n*✧┇مـثـال☜┇*\n*.توب اساطير*`
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
 let b = ps.getRandom()
