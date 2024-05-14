@@ -5,9 +5,9 @@ conn.unblur_high = conn.unblur_high ? conn.unblur_high : {}
 if (m.sender in conn.unblur_high) throw "*تحويل صورة قديمة الى صورة ذات جودة عالية*"
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ""
-if (!mime) throw `*ارسل صورة مصحوبة بكلمة ${usedPrefix + command}*`
-if (!/image\/(jpe?g|png)/.test(mime)) throw `*[❗] 𝙴𝙻 𝙵𝙾𝚁𝙼𝙰𝚃𝙾 𝙳𝙴𝙻 𝙰𝚁𝙲𝙷𝙸𝚅𝙾 (${mime}) 𝙽𝙾 𝙴𝚂 𝙲𝙾𝙼𝙿𝙰𝚁𝚃𝙸𝙱𝙻𝙴, 𝙴𝙽𝚅𝙸𝙰 𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽𝙰 𝙵𝙾𝚃𝙾*`
-else conn.unblur_high[m.sender] = true
+if (!mime) throw `*✪┇أيــن الــصـوره الــتي تــريـد تــحـسـيـن جــودتـهـا؟*`
+if (!/image\/(jpe?g|png)/.test(mime)) throw `*[❗] يــجـب ارســال صــوره بــتـنـسـيـق (jpg,png)*`
+else conn.unblur_high[m.sender] = true 
 m.reply('*جاري معالجة الصورة*')
 let img = await q.download?.()
 let upld = await uploadImage(img)
@@ -23,7 +23,7 @@ delete conn.unblur_high[m.sender]
 }}
 handler.help = ["remini", "hd", "enhance"]
 handler.tags = ["ai", "tools"]
-handler.command = ["remini", "hd", "جوده"]
+handler.command = ["remini", "hd", "جودة", "جوده"]
 export default handler
 
 /*import uploadImage from '../lib/uploadImage.js'
