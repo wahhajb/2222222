@@ -1,4 +1,4 @@
-let handler = async (m, { conn, isPrems}) => {
+/*let handler = async (m, { conn, isPrems}) => {
 let hasil = Math.floor(Math.random() * 5000)
 let time = global.db.data.users[m.sender].lastwork + 600000
 if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*أنت متعب يجب أن تستريح على الأقل ${msToTime(time - new Date())}للعودة إلى العمل!*`
@@ -53,3 +53,4 @@ global.work = ["مطور مواقع ويب", "مطور العاب", "احد مط
 "تعمل كصانع لوجوهات لتيم هنري  وتحصل علي","تعمل كبلوجر وتحصل علي", 
 "تعمل علي بريمير لتعديل الفديوهات وتحصل علي"
 ]
+*/
