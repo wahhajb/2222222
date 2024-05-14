@@ -51,7 +51,7 @@ room.game._currentTurn = m.sender === room.game.playerX
 isWin = true }
 let winner = isSurrender ? room.game.currentTurn : room.game.winner
 let str = `
-🎮 تيك تاك تو 🎮
+ *❐╎لــعـبـة اكــس او ❭*
 
 ❎ = @${room.game.playerX.split('@')[0]}
 ⭕ = @${room.game.playerO.split('@')[0]}
@@ -60,7 +60,7 @@ let str = `
         ${arr.slice(3, 6).join('')}
         ${arr.slice(6).join('')}
 
-${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} مبروك 🥳, كسبت  +4999 𝚎𝚡𝚙` : isTie ? 'تعادل😐' : `دورك@${room.game.currentTurn.split('@')[0]}`}
+${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} *❐╎كــسـبـت 4999 XP ❭*` : isTie ? '*❐╎تــعـادل ❭*' : `دورك@${room.game.currentTurn.split('@')[0]}`}
 `.trim()
 let users = global.db.data.users
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
