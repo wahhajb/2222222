@@ -8,15 +8,16 @@ import os from 'os';
 const streamPipeline = promisify(pipeline);
 
 var handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `مثال : \n ${usedPrefix}${command} midle of night`;
+  if (!text) throw `*✪┇اكـتـب الامـر ثـم ضــع أســم الأغــنـيـه┇*\n\n*✧┇مـثـال☜┇*\n*.اغنيه Moonlight*`;
 
   let search = await yts(text);
   let vid = search.videos[Math.floor(Math.random() * search.videos.length)];
-  if (!search) throw 'الفديو غير موجود, جرب عنوان ثاني';
+  if (!search) throw '*✧┇الــعـنـوان غــيـر صــالـح┇✧*';
   let { title, thumbnail, timestamp, views, ago, url } = vid;
-  let wm = ' 💝AHMAD SHİNİCHİ💝';
+  let wm = '𝐁𝐘 𝐆𝐔𝐓𝐒 𝐁𝐎𝐓';
+  let str = `*تــم تــنــفـذ الــطـلـب بــنـجـاح✅*`
 
-  let captvid = `💝  جاري التحميل ♥`;
+  let captvid = `*✪┇جــاري الــتـحـميـل يــرجـى الانــتـظـار*\n\n*✥━─━─━─━─━─━─━─━─━─━✥*\n\n*✧┇الــمـطـور مــلـوش دعــوه بــذنـوب اغــانـيــك يـ حــلـو┇✧*`;
 
   conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author }, { quoted: m });
 
@@ -40,6 +41,7 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
       url: `${tmpDir}/${title}.mp3`
     },
     mimetype: 'audio/mp4',
+    caption: str,
     fileName: `${title}`,
     contextInfo: {
       externalAdReply: {
