@@ -1,4 +1,4 @@
-//import db from '../lib/database.js'
+/*import db from '../lib/database.js'
 
 let handler = async (m, { conn }) => {
 
@@ -27,4 +27,4 @@ function msToTime(duration) {
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
   return hours + " hora(s) " + minutes + " minuto(s) " + seconds + " segundo(s)" 
-}
+}*/
