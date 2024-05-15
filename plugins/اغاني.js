@@ -1,4 +1,4 @@
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
+/*import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import yts from 'yt-search'
 var handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!text) throw `*تحميل الاغاني من يوتوب*`
@@ -62,7 +62,7 @@ thumbnail: await(await conn.getFile(thumbnail)).data
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^اغاني$/i
+handler.command = /^اغاني$/i*/
 
 handler.exp = 0
 handler.limit = false
