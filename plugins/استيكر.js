@@ -1,4 +1,4 @@
-١import { sticker } from '../lib/sticker.js'
+import { sticker } from '../lib/sticker.js'
 import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 import { webp2png } from '../lib/webp2mp4.js'
@@ -32,11 +32,11 @@ console.error(e)
 if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
-else throw '*هذا الامر خاص بتحويل صورة او فيديو كامل الى ملصق كامل يعني بدون قص الملصق والنتيجة تكون جميلة بحيت تحصل على ملصق كامل  *'
+else throw '*اعـــمــل رد عــلـى الــصــورة الــي عــاوز تـــخــلـيها مـــلــصـق*'
 }}
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
-handler.command = /^استيكر$/i
+handler.command = /^مربع$/i
 export default handler
 
 const isUrl = (text) => {
