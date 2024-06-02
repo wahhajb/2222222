@@ -9,7 +9,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let lol = `*⚠️ استخدام الأمر*
 ${usedPrefix + command}  [النوع] [العدد] [@user]
 
-📝 مثال : ${usedPrefix + command} exp 65 @201012531172
+📝 مثال : ${usedPrefix + command} exp 65 @967773289295
 
 
 📍 العناصر القابلة للتحويل
