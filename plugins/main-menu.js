@@ -7,10 +7,10 @@ import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 try {
-let videoUrl = 'https://telegra.ph/file/77ed3f5782e1f10e64e77.mp4'
+let videoUrl = 'https://telegra.ph/file/28da3b1090901d77b4aa3.mp4'
 let vn = './media/menu.mp3'
 let pp = imagen4
-let img = await(await fetch('https://telegra.ph/file/9704f93df7793554633ee.jpg')).buffer()
+let img = await(await fetch('https://telegra.ph/file/dfacba6ae821315a875f0.jpg')).buffer()
 let d = new Date(new Date + 3600000)
 let locale = 'ar'
 let week = d.toLocaleDateString(locale, { weekday: 'long' })
@@ -38,7 +38,7 @@ let str = `
 
  *✥─━─╃⌬〔🍁〕⌬╄─━─✥*
  *〘 وقــت الــتـشـغيل ☜ ${uptime} 〙*
- *❬⚡❭↜〘 اســمـي ☜ غــاتـس 〙*
+ *❬⚡❭↜〘 اســمـي ☜ زورو 〙*
  *❬🔮❭↜〘 هــيـروكـو ☜ الــمـنـصـه 〙*
  *❬♦❭↜〘 الوضـع ☜ عـام 〙*
  *❬✨❭↜〘 الــيوم ☜ ${week} 〙*
