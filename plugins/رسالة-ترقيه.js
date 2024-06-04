@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `🎊 عاش يحب ${conn.getName(m.sender)}    المستوي:`
+        let teks = `🎊 عاش  ${conn.getName(m.sender)}    المستوي:`
         let str = `
 *『مــبـروڪ ؏ـلـمستوۍ الـجديد يـا ${name}』*
 
